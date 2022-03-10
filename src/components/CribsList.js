@@ -1,16 +1,48 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./styles/CribsList.css"
-import Crib from "./Crib"
+// import Crib from "./Crib"
 
-function CribsList({cribs}) {
+
+function CribsList() {
+     const [comment, setComment] = useState("")
+     const [rating, setRating] = useState("")
+
+
+     function handleSubmit(e) {
+          e.preventDefault();
+          
+
+     fetch ("http://localhost:9292/reviews", {
+          method: 'POST',
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({
+          comment:comment,
+          star_rating:rating
+     })
+     }).then(response => response.json())
+     .then(newReview=>(newReview))
+     setComment('')
+     setRating('')
+}
+
   return (
-   <section className="cribslist">
-        <div className="cribslist-center">
-           { cribs.map(crib=> {
-                return <Crib key = {crib.id} crib={crib} />
-            })}
+     <div className="comments">
+       <h3 className="comments-title">Comments</h3>
+       <div className="comment-form-title">Write comment</div>
+       <form>
+       <input value="" placeholder=""/> 
+       <input value= "" placeholder=""/> 
+       <input value =""  placeholder=""/> 
+       <input value =""  placeholder=""/> 
+       <input value =""  placeholder=""/> 
+       <div className="button">
+        <button  onSubmit={handleSubmit}>SUBMIT</button>
         </div>
-   </section>
+
+
+       </form>
+ 
+     </div>
   )
 }
 

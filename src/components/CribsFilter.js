@@ -42,12 +42,13 @@ function CribsFilter({handleAdd}) {
 
   return (
     <>
+    <div className="list-container">
     <div className="name">
-      LIST YOUR CRIB
+     NEW RELEASES
     </div>
     
      <form onSubmit={handleSubmit} >
-        <div className="cribs">
+        {/* <div className="cribs">
           <input value = {location} onChange= {(e)=>setLocation(e.target.value)} placeholder="Location" />
           <br/>
           <input value ={area} onChange= {(e)=>setArea(e.target.value)} placeholder="Area"/>
@@ -62,13 +63,13 @@ function CribsFilter({handleAdd}) {
           <input  value ={image2} onChange= {(e)=>setImage2(e.target.value)} placeholder="Image-2"/>
           <input  value ={image3} onChange= {(e)=>setImage3(e.target.value)} placeholder="Image-3"/>
           <input  value ={image4} onChange= {(e)=>setImage4(e.target.value)} placeholder="Image-4"/>
-        </div>
-        <div className="button">
+        </div> */}
+        {/* <div className="button">
         <button>SUBMIT</button>
-        </div>
-
+        </div> */}
+        
       </form>
-
+</div>
     </>
   )
 }

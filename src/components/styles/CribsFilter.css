@@ -1,3 +1,6 @@
+.list-container{
+    background: black;
+}
 .name {
     height: 10vh;
     display:flex;

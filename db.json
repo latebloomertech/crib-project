@@ -2,16 +2,10 @@
   "cribs": [
     {
       "id": 1,
-      "location": "46 West 89th Street, Garden",
-      "area": "Upper West Side, Manhattan, NY 10022",
-      "bed": "3 BEDS |",
-      "bath": "3 BATHS |",
-      "price": "$11,250",
+      "name": "Her",
+      "description": "The film follows Theodore Twombly (Joaquin Phoenix), a man who develops a relationship with Samantha (Scarlett Johansson), an artificially intelligent virtual assistant personified through a female voice.",
       "images": [
-        "https://images.unsplash.com/photo-1465637735148-7a30f47f5b2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1hbmhhdHRhbiUyMGFwYXJ0bWVudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-        "https://res.cloudinary.com/corcoran-dryrmqrbg/image/upload/f_auto,q_auto,c_scale,dpr_auto,w_1600/v1645023995/ListingFullAPI/NewTaxi/7526468/mediarouting.vestahub.com/Media/131677334.jpg",
-        "https://res.cloudinary.com/corcoran-dryrmqrbg/image/upload/f_auto,q_auto,c_scale,dpr_auto,w_1600/ListingFullAPI/NewTaxi/7526468/mediarouting.vestahub.com/Media/131633013.jpg",
-        "https://res.cloudinary.com/corcoran-dryrmqrbg/image/upload/f_auto,q_auto,c_scale,dpr_auto,w_1600/ListingFullAPI/NewTaxi/7526468/mediarouting.vestahub.com/Media/131633014.jpg"
+        "https://miro.medium.com/max/980/1*RyZqr5zvQMA8LRhEUC-glg.jpeg"
       ]
     },
     {

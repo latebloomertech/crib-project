@@ -1,14 +1,21 @@
-.cribslist {
-    padding: 5rem 0;
-  }
-  .cribslist-center {
-    width: 80vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    grid-row-gap: 2rem;
-    grid-column-gap: 30px;
-  }
+
+   
+.comments {
+  margin-top: 20px;
+  background: black;
+}
+.comments-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+   color: white;
+}
+.comment-form-title {
+  margin-top: 40px;
+  color:white 
+}
+
+
+
   
   @media screen and (min-width: 776px) {
     .cribslist-center {
