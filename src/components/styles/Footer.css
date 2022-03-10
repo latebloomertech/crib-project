@@ -1,0 +1,81 @@
+.footer {
+    padding: 5rem calc((100vw - 1100px) / 2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    background: url(https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGJsYWNrJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1200&q=60) ;
+    background-size: cover;
+}
+.footer-desc {
+padding: 0 2rem;
+}
+.footer-desc h1 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.footer-desc p {
+    margin-bottom: 1rem;
+}
+#phone {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer-links {
+    display:flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    align-items: flex-start;
+    padding:1rem 2rem;
+}
+.footer-title {
+    font-size: 14px;
+    margin-bottom:16px;
+}
+.footer-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+.footer-link:hover {
+    color: rgb(8, 8, 8);
+}
+@media screen and (min-width: 820px) {
+    .footer-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width:400px) {
+    .footer-desc {
+        padding:1rem;
+    }
+}
+.footer-links {
+    /* margin: 0vw; */
+    padding:1rem;
+    animation: fadeIn 1s ease;
+    
+}
+@keyframes fadeIn { /* fadeIn is the name of the animation */
+    from { /* how the animation starts */
+      opacity: 0;
+      transform: scale(0.1);
+      bottom: -500px;
+      background: transparent;
+      transform: rotate(30deg);
+    }
+
+    to { /* how the animation ends */
+      opacity: 1;
+      transform: scale(1);
+      bottom: 0;
+      background:black;
+      transform: rotate(0deg);
+    }
+  }

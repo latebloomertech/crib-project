@@ -1,0 +1,28 @@
+.name {
+    height: 10vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.form {
+ 
+    justify-content:center;
+    height: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    height: 100%;
+}
+.cribs {
+    width: 10%;
+    height: 100%;
+    color:#595f6e;
+    padding-top:20px;
+    border: none;
+    display:block;
+    color: red;
+
+
+
+}

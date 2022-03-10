@@ -1,0 +1,155 @@
+/* .email {
+    background: linear-gradient(
+        180deg, 
+        rgba(0, 0, 0, 0.6) 0%, 
+        rgba(0, 0, 0, 0.6) 35%,
+        rgba(0, 0, 0, 0.1) 100%,  
+    ),
+    url(https://images.unsplash.com/photo-1480944657103-7fed22359e1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG9mZmljZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=1296&q=60) no-repeat center;
+    background-size: cover;
+    height: 450px;
+    padding: 5rem calc((100vw - 1300px) / 2);
+    color: black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.email-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.email-content h1 {
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+.form {
+    z-index: 10;
+}
+.form-wrap input {
+    padding: 1rem 1.5rem;
+    outline: none;
+    width: 350px;
+    height: 50px;
+    border:none;
+    margin-right: 1rem;
+    border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+    .form-wrap {
+        display:flex;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .form-wrap input {
+        margin-bottom: 1rem;
+        min-width:350px;
+        margin-right: 0;
+    }
+    button {
+        width: 100%;
+        min-width: 350px;
+    }
+}
+@media screen and (min-width: 400px) {
+    button {
+        width: 100%;
+        min-width: 250px;
+    }
+
+} */
+.email {
+position: fixed;
+height: 200px;
+width: 1000px;
+background: transparent;
+z-index: 2;
+top: 20%;
+
+
+
+padding: 2%;
+border-radius: 10px;
+text-align: center;
+justify-content: center;
+
+}
+/* .email-content h1{
+    color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif; 
+} */
+.form-wrap {
+ 
+    background: white;
+    border: 0.2px solid rgb(243, 241, 241);
+    border-radius: 10px;
+    padding: 5rem calc((100vw - 1100px) / 2);
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 220px;
+    animation: fadeIn 1s ease;
+    
+    @keyframes fadeIn { /* fadeIn is the name of the animation */
+        from { /* how the animation starts */
+          opacity: 1;
+          transform: scale(0.1);
+          bottom: -500px;
+          background: transparent;
+         
+        }
+    
+        to { /* how the animation ends */
+          opacity: 2;
+          transform: scale(1);
+          bottom: 0;
+          background:transparent;
+        
+        }
+      }
+  
+    }
+    .input-field {
+     color: #000000;
+    font-size: 12px;
+
+    height: 50px;
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    background: transparent;
+    width:100px;
+    
+   
+    
+  
+   
+}
+
+.form-container {
+    text-align: center;
+    width:10%;
+   display:flex;
+   align-items:center;
+   justify-content: center;
+   
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+  }
+  .button:hover {
+      
+      background-color:#fffbfb
+
+
+  }
+  .button {
+    background-color: transparent;
+    color: #030303;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+  }
