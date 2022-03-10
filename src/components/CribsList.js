@@ -10,8 +10,7 @@ function CribsList() {
 
      function handleSubmit(e) {
           e.preventDefault();
-          
-
+        
      fetch ("http://localhost:9292/reviews", {
           method: 'POST',
           headers: {"Content-Type": "application/json"},
@@ -29,19 +28,19 @@ function CribsList() {
      <div className="comments">
        <h3 className="comments-title">Comments</h3>
        <div className="comment-form-title">Write comment</div>
-       <form>
-       <input value="" placeholder=""/> 
-       <input value= "" placeholder=""/> 
-       <input value =""  placeholder=""/> 
-       <input value =""  placeholder=""/> 
-       <input value =""  placeholder=""/> 
+       <form onSubmit={handleSubmit}>
+       <input value={comment} onChange= {(e)=>setComment(e.target.value)}placeholder=""/>
+       <input value= ""  placeholder=""/>
+       <input value =""  placeholder=""/>
+       <input value =""  placeholder=""/>
+       <input value =""  placeholder=""/>
        <div className="button">
-        <button  onSubmit={handleSubmit}>SUBMIT</button>
+        <button  >SUBMIT</button>
         </div>
 
 
        </form>
- 
+
      </div>
   )
 }
