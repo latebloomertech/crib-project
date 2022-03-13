@@ -30,17 +30,17 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Flat Tv 
+            Flat Tv
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link 
+              <Link
                 to='/'
-                exact  
-                className='nav-links' 
+                exact
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
                   Home
@@ -73,11 +73,11 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Contact Us
+                JOIN
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>CONTACT US</Button>}
+      
         </div>
       </nav>
     </>
